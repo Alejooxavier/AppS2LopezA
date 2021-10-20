@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppS2LopezA.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Semana 2: Elementos visuales" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Ingrese un valor" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtValorUno" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/> 
+        
+            <Label Text="Ingrese otro valor" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtValorDos" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="El resultado es" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtResultado" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+
+           
+        </Grid>
+        <Button x:Name="btnSumar" Text="Sumar" Clicked="btnSumar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
